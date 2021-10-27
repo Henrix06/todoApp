@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  todoList = [{
+    itemName : 'Buy Groceries',
+    itemDueDate : '31-11-21',
+    itemPriority : 'high',
+    itemCategory : 'home'
+     }
+            
+            ]
   constructor() {}
-
+  
+  today = Date.now();
 }
